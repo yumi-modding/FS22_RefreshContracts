@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>yumi</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Refresh Contracts</en>
+        <fr>Actualiser Les Contrats</fr>
+        <de>Verträge Aktualisieren</de>
+    </title> 
+    <description>
+        <en><![CDATA[
+This mod enable to refresh the list of contracts proposed if you're not satisfied with current list by clicking on a button in the contracts panel.
+This prevents the need to reload a savegame several times to do so.
+]]></en>
+        <fr><![CDATA[
+Ce mod permet de rafraîchir la liste des contrats proposés si vous n'êtes pas satisfait de la liste actuelle en cliquant sur un bouton dans le panneau des contrats.
+Cela évite d'avoir à recharger une sauvegarde plusieurs fois pour ce faire.
+]]></fr>
+        <de><![CDATA[
+Mit diesem Mod können Sie die Liste der vorgeschlagenen Verträge aktualisieren, wenn Sie mit der aktuellen Liste nicht zufrieden sind, indem Sie auf eine Schaltfläche im Vertragsfenster klicken.
+Dadurch wird verhindert, dass ein Spielstand mehrmals neu geladen werden muss, um dies zu tun.
+]]></de>
+    </description>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="RefreshContracts.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="RefreshContracts_REFRESH">
+            <fr>Actualiser les contrats</fr>
+            <en>Refresh Contracts</en>
+            <de>Verträge aktualisieren</de>
+        </text>
+    </l10n>
+
+</modDesc>
