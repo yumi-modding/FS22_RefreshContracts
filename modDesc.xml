@@ -32,6 +32,7 @@ Dadurch wird verhindert, dass ein Spielstand mehrmals neu geladen werden muss, u
             <fr>Actualiser les contrats</fr>
             <en>Refresh Contracts</en>
             <de>Verträge aktualisieren</de>
+            <ru>Обновить контракты</ru>
         </text>
     </l10n>
 
