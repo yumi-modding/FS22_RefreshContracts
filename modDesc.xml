@@ -20,6 +20,10 @@ Cela évite d'avoir à recharger une sauvegarde plusieurs fois pour ce faire.
 Mit diesem Mod können Sie die Liste der vorgeschlagenen Verträge aktualisieren, wenn Sie mit der aktuellen Liste nicht zufrieden sind, indem Sie auf eine Schaltfläche im Vertragsfenster klicken.
 Dadurch wird verhindert, dass ein Spielstand mehrmals neu geladen werden muss, um dies zu tun.
 ]]></de>
+        <pl><![CDATA[
+Ten mod umożliwia odświeżenie kontraktów, jeśli nie jesteś zadowolony z aktualnej listy, klikając przycisk w oknie kontraktów.
+Zapobiega to konieczności kilkukrotnego wczytywania zapisów gry.
+]]></pl>
     </description>
     <iconFilename>modIcon.dds</iconFilename>
     <multiplayer supported="true"/>
@@ -33,6 +37,7 @@ Dadurch wird verhindert, dass ein Spielstand mehrmals neu geladen werden muss, u
             <en>Refresh Contracts</en>
             <de>Verträge aktualisieren</de>
             <ru>Обновить контракты</ru>
+            <pl>Odśwież kontrakty</pl>
         </text>
     </l10n>
 
