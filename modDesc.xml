@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="61">
     <author>yumi</author>
     <version>1.0.0.0</version>
@@ -6,6 +6,7 @@
         <en>Refresh Contracts</en>
         <fr>Actualiser Les Contrats</fr>
         <de>Verträge Aktualisieren</de>
+		<it>Aggiorna i contratti</it>
     </title> 
     <description>
         <en><![CDATA[
@@ -24,6 +25,10 @@ Dadurch wird verhindert, dass ein Spielstand mehrmals neu geladen werden muss, u
 Ten mod umożliwia odświeżenie kontraktów, jeśli nie jesteś zadowolony z aktualnej listy, klikając przycisk w oknie kontraktów.
 Zapobiega to konieczności kilkukrotnego wczytywania zapisów gry.
 ]]></pl>
+        <it><![CDATA[
+Questa mod consente di aggiornare l'elenco dei contratti proposti se non sei soddisfatto dell'elenco corrente facendo clic su un pulsante nel pannello dei contratti.
+Ciò evita la necessità di ricaricare un salvataggio più volte per farlo.
+]]></it>
     </description>
     <iconFilename>modIcon.dds</iconFilename>
     <multiplayer supported="true"/>
@@ -38,6 +43,7 @@ Zapobiega to konieczności kilkukrotnego wczytywania zapisów gry.
             <de>Verträge aktualisieren</de>
             <ru>Обновить контракты</ru>
             <pl>Odśwież kontrakty</pl>
+			<it>Aggiorna i contratti</it>
         </text>
     </l10n>
 
