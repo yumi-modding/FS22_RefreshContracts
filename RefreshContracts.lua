@@ -14,7 +14,13 @@ function RefreshContracts:onFrameOpen()
         refreshContractsElement.onClickCallback = function(dialog)
             if RefreshContracts.debug then print("RefreshContracts:onClickCallback") end
             -- Set generationTimer to 0 so missions will be refresh at next update
-            g_missionManager.generationTimer = 0
+            -- g_missionManager.generationTimer = 0
+            g_missionManager:refreshMissions()
+            if RefreshContracts.debug then
+                print("RefreshContracts:generationTimer "..tostring(g_missionManager.generationTimer))
+                print("#g_missionManager.missions "..tostring(#g_missionManager.missions))
+                print("#g_missionManager.missions "..tostring(MissionManager.MAX_MISSIONS))
+            end
         end
 
         inGameMenu.menuButton[1].parent:addElement(refreshContractsElement)
@@ -25,6 +31,12 @@ function RefreshContracts:onFrameOpen()
     end
 end
 InGameMenuContractsFrame.onFrameOpen = Utils.appendedFunction(InGameMenuContractsFrame.onFrameOpen, RefreshContracts.onFrameOpen)
+
+-- For Dedicated Server debug
+-- function RefreshContracts:generateMissions(dt)
+--     if RefreshContracts.debug then print("RefreshContracts:generateMissions") end
+-- end
+-- MissionManager.generateMissions = Utils.appendedFunction(MissionManager.generateMissions, RefreshContracts.generateMissions)
 
 function RefreshContracts:onFrameClose()
     if RefreshContracts.debug then print("RefreshContracts:onFrameClose") end
@@ -46,4 +58,15 @@ function RefreshContracts.onClickMenuExtra1(dialog, superFunc, ...)
     end
 
     dialog.refreshContractsElement_Button.onClickCallback(dialog)
+end
+
+function MissionManager:refreshMissions()
+    -- print("MissionManager:refreshMissions")
+	if g_currentMission:getIsServer() then
+        -- print("called on Server")
+        self.generationTimer = 0
+	else
+        -- print("called on Client")
+		g_client:getServerConnection():sendEvent(RefreshContractsEvent.new())
+	end
 end
